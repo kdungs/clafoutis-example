@@ -4,7 +4,7 @@ my-image:
   tags:
     - privileged
   script:
-    - clafoutis -d $CI_PROJECT_DIR/dist
+    - clafoutis --zip -d $CI_PROJECT_DIR/dist
   artifacts:
     paths:
       - /image.zip

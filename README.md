@@ -1,2 +1,3 @@
 # clafoutis-example
-An example of how to use clafoutis
+
+An example of how to use [Clafoutis](https://github.com/kdungs/clafoutis).
