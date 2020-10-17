@@ -1,0 +1,11 @@
+my-image:
+  stage: release
+  image: clafoutis:latest
+  tags:
+    - privileged
+  script:
+    - clafoutis -d $CI_PROJECT_DIR/dist
+  artifacts:
+    paths:
+      - /image.zip
+    expire_in: 1 day
