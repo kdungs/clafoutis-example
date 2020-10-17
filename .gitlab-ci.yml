@@ -1,6 +1,6 @@
 my-image:
   stage: release
-  image: clafoutis:latest
+  image: kdungs/clafoutis:latest
   tags:
     - privileged
   script:

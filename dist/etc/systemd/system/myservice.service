@@ -1,0 +1,9 @@
+[Unit]
+Description=My awesome service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/mybinary
+
+[Install]
+WantedBy=multi-user.target
