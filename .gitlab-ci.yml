@@ -1,11 +1,13 @@
 my-image:
-  stage: release
+  stage: build
   image: kdungs/clafoutis:latest
   tags:
     - privileged
   script:
-    - clafoutis --zip -d $CI_PROJECT_DIR/dist
+    - clafoutis --zip
+      --distdir $CI_PROJECT_DIR/dist
+      --name clafoutis-example
   artifacts:
     paths:
-      - /image.zip
+      - /clafoutis-example.zip
     expire_in: 1 day

@@ -9,6 +9,7 @@ docker run \
   --volume="${here}/dist":/dist:ro \
   --volume="${here}/image":/image \
   kdungs/clafoutis:latest \
+  clafoutis \
   --distdir /dist \
   --outdir /image \
-  --name myimage
+  --name clafoutis-example
